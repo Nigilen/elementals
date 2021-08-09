@@ -1,0 +1,13 @@
+body {
+  background-image: 
+  linear-gradient(to bottom left, #111111, #191919);
+  display: grid;
+  place-content: center;
+  height: 98vh;
+}
+
+p {
+  display: block;
+  color: #fdfdfd;
+  letter-spacing: 1.5px;
+}

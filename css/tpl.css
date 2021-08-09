@@ -1,0 +1,43 @@
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.button {
+  position: relative;
+  padding: 20px 40px;
+  background-color: tomato;
+  font-size: 22px;
+  user-select: none;
+ 
+}
+
+.point {
+  padding: 0px;
+  position: absolute;
+  background-color: #3d3d3d;
+  border-radius: 100px;
+  transition-duration: 0s;
+  opacity: .4;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.point-blob {
+  padding: 0px;
+  animation-name: blob;
+  animation-duration: .3s;
+}
+
+@keyframes blob {
+  0% {
+    padding: 0px;
+    opacity: 1;
+  }
+  100% {
+    padding: 100px;
+    opacity: 0;
+  }
+}

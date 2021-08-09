@@ -1,0 +1,57 @@
+body {
+  height: 90vh;
+  display: flex;
+}
+
+
+/* ————————————————————— honeycomb-button ————————————————————— */
+
+.honeycomb-button {
+  position: relative;
+  display: flex;
+  padding: 12px;
+  background-color: #3B3B3B;
+  width: min-content;
+  margin: auto;
+  font-size: 20px;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.honeycomb-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3B3B3B;
+  transform: rotate(60deg) translateX(-150px);
+  z-index: -1;
+  transition-duration: .3s;
+  opacity: 0;
+}
+
+.honeycomb-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3B3B3B;
+  transform: rotate(120deg) translateX(-150px);
+  z-index: -1;
+  transition-duration: .4s;
+  opacity: 0;
+}
+
+.honeycomb-button:hover:after  {
+  transform: rotate(60deg) translateX(0px);
+  opacity: 1;
+}
+
+.honeycomb-button:hover:before {
+  transform: rotate(120deg) translateX(0px);
+  opacity: 1;
+}
